@@ -11,14 +11,20 @@
         <div id="Home">
             <div class="row pizz">
                 <div class="col-md-12">
-                    <h1 class=" text-center"><b>Una's Pizzeria</b></h1>
+                    <div class="container">
+                        <div class="jumbotron">
+                            <h1 class=" text-center"><b>Una's Pizzeria</b></h1>
+    
+                        </div>
+                    </div>
+                    
                     
                 </div>
                 <div class="col-md-4">
                     <a href="#Home">Home</a>
                 </div>
                 <div class="col-md-4">
-                    <a href="#Menu">Menu</a>
+                    <a href="#menu"> Menu</a>
                 </div>
                 <div class="col-md-4">
                     <a href="#contacts">Contacts </a>
@@ -36,22 +42,78 @@
                 <p><b>Types of pizza available</b></p>
                 <div class="row text-center">
                     <div class="col-md-3">
-                        <img src="hawaian.jpg" height="200" width="200">
+                        <img src="hawaian.jpg" height="200" width="250">
                         <p><b> Hawaian pizza</b></p>
                     </div>
                     <div class="col-md-3">
-                        <img src="meat.jpg" height="200" width="200">
+                        <img src="meat.jpg" height="200" width="280">
                         <p><b>Meat Deluxe</b></p>
                     </div>
                     <div class="col-md-3">
-                        <img src="chicken.jpg" height="200" width="200">
+                        <img src="chicken.jpg" height="200" width="270">
                         <p><b>Chicken bacon barbeque </b></p>
                     </div>
                     <div class="col-md-3">
-                        <img src="veg.jpg" height="200" width="200">
-                        <p><b></b></p>
+                        <img src="veg.jpg" height="200" width="250">
+                        <p><b>Vegeterian pizza</b></p>
                     </div>
                 </div>
+                <div class="container " id="size">
+                    <P><label for="pizza-size">Choose which pizza size you would want:</label>
+                    </P> 
+                     <select >
+                         <option value=""> </option>
+                       <option value="small">Small</option>
+                       <option value="medium">Medium</option>
+                       <option value="large">Large</option>
+                       <option value="extraLarge">Extra large</option>
+                     </select>
+                     <div class="crust">
+                        <p ><b>Which crust  would you want?</b></p>
+                    
+                    <label>
+                        <input type="radio" name="typo" value="cripsy"> Cripsy
+                    </label>
+                    <label>
+                        <input type="radio" name="typo" value="stuffed">Stuffed
+                    </label>
+                    <label>
+                        <input type="radio" name="typo" value="glutten-free"> Glutten-free
+                    </label>
+                     </div>
+                     <div class="toppings">
+                         <p>Decide on the toppings you would like:</p>
+                         <label for="onions">onions:</label>
+                         <input type="checkbox" id="onion" class="form-control">
+                         <label for="onions">Mushrooms:</label>
+                         <input type="checkbox" id="mush" class="form-control">
+                         <label for="onions">Bacon:</label>
+                         <input type="checkbox" id="bacs" class="form-control">
+                         <label for="onions">sausage:</label>
+                         <input type="checkbox" id="sausage" class="form-control">
+                         <label for="onions">cheese:</label>
+                         <input type="checkbox" id="cheese" class="form-control">
+                         <label for="onions">olives:</label>
+                         <input type="checkbox" id="olives" class="form-control">
+                         <label for="onions">Pineapples:</label>
+                         <input type="checkbox" id="Pineapples" class="form-control">                         
+                     </div>
+                     <div class="numbers">
+                        <label>How many pizzas do you want?</label>
+                     <input type="number" id="noPizza"> 
+                     <p>Do you want your pizza to be delivered?</p>
+                     <label>
+                        <input type="radio" name="typo" value="yes"> yes
+                    </label>
+                    <label>
+                        <input type="radio" name="typo" value="no"> no
+                    </label>
+                     </div>
+                     
+                     </div>
+                
+               
+
                 
              </div>
 
