@@ -44,7 +44,7 @@
 
 
     <div id="Menu">
-        <p><b>Types of pizza available</b></p>
+        <p class="available"><b>Types of pizza available</b></p>
         <div class="row text-center">
             <div class="col-md-3 pizz1">
                 <img src="hawaian.jpg" height="200" width="250">
@@ -84,7 +84,7 @@
                     <p><b>Which crust would you want?</b></p>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="typo" value="cripsy"> Cripsy
+                            <input type="radio" name="typo" value="crispy"> Cripsy
                         </label>
                     </div>
                     <div>
@@ -102,6 +102,7 @@
                 <div class="toppings">
                     <p>Decide on the toppings you would like:</p>
                     <select class="form-control" id="pizzaToppings">
+                        <option value=""> </option>
                         <option value="pepperoni">pepperoni @ sh150</option>
                         <option value="mushroom">Mushrooms @ sh100</option>
                         <option value="onion">Onions @ sh100</option>
@@ -122,10 +123,18 @@
                         <input type="radio" name="delivery" value="no"> no
                     </label>
                 </div>
-                <button id="values" type="button" class="btn-primary">Go</button>
+                <button id="values" type="button" class="btn-primary">Checkout</button>
             </div>
     </div>
     </form>
+    <div class="results">
+        <p>Type: <span class="typeOfPizza"><span></p>
+        <p>Crust: <span class="crustresult"></span></p>
+        <p>Size: <span class="sizeResult"></span></p>
+        <p>Topping: <span class="toppingsResult"></span></p>
+        <p>Number: <span class="numberResult"></span></p>
+        <p>Total: <span class="total"></span></p>
+    </div>
 
 
 

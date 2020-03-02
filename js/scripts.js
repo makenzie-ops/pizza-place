@@ -1,9 +1,6 @@
-var total=0;
-// $(document).ready(function(){
-//     $(".pizz1").hover(function (){
-//         $("hawaianPizz").toggle();
-//     });
-// })
+var totalPrice=0;
+
+
 function Pizza(type, size,crust,toppings,number){
     this.type =type;
     this.size = size;
@@ -22,58 +19,251 @@ $(document).ready(function(){
         var inputSize = $("#pizzaSize").val();
         var inputCrust =  $("input[name='typo']:checked").val();
         var inputToppings= $("#pizzaToppings").val();
-        var inputNumber = $("#noPizza").val()
+        var inputNumber = parseInt($("#noPizza").val());
         var deliveryFee =  $("input[name='delivery']:checked").val();
          
         var newPizza = new Pizza( inputPizza,inputSize,inputCrust,inputToppings,inputNumber,deliveryFee )
         total(inputPizza,inputSize,inputCrust,inputToppings,inputNumber,deliveryFee);
+        $(".typeOfPizza").text(newPizza.type);
+        $(".crustresult").text(newPizza.crust)
+        $(".sizeResult").text(newPizza.size)
+        $(".toppingsResult").text(newPizza.toppings)
+        $(".numberResult").text(newPizza.number)
+        $(".total").text(totalPrice)
+        
+        //alert(totalPrice);
+
+        totalPrice=0;
        
         
     });
 });
 
 function total(inputPizza,inputSize,inputCrust,inputToppings,inputNumber,deliveryFee){
-
-}
-
-    switch (inputPizza) {
-        case ("Hawaian "):
+    
+    switch (inputPizza) {        
+        case ("Hawaian"):
             switch(inputSize) {
                 case ("small"):
                     price = 550;
-                    if (inputCrust == "crispy") {
-                       totalPrice = (price  * inputNumber )+100;
-                    }else if (inputCrust =="stuffed") {
-                        totalPrice = (price * inputNumber ) + 50;
+                    if (inputCrust === "crispy") {
+                       totalPrice = totalPrice +(price  * inputNumber )+100;
+                       
+                    }else if (inputCrust ==="stuffed") {
+                        totalPrice =totalPrice + (price * inputNumber ) + 50;
                     } else {
-                        totalPrice =(price *inputNumber) + 120
+                        totalPrice =totalPrice +(price *inputNumber) + 120
                     }
-                    s
+                    
                     break;
-                    case  ("Medium"):
+                    case  ("medium"):
                         price = 750;
-                        if (inputCrust == "crispy") {
-                         totalPrice = (price  * inputNumber )+100;
-                      }else if (inputCrust =="stuffed") {
-                          totalPrice = (price * inputNumber ) + 50;
+                        if (inputCrust === "crispy") {
+                         totalPrice =totalPrice + (price  * inputNumber )+100;
+                      }else if (inputCrust ==="stuffed") {
+                          totalPrice =totalPrice + (price * inputNumber ) + 50;
                       } else {
-                          totalPrice =(price *inputNumber) + 120
+                          totalPrice =totalPrice +(price *inputNumber) + 120
                       }
                       break;
-                      case ("Large") :
+                      case ("large") :
+                        price = 1100;
+                        if (inputCrust == "crispy") {
+                         totalPrice =totalPrice + (price  * inputNumber )+100;
+                      }else if (inputCrust =="stuffed") {
+                          totalPrice =totalPrice + (price * inputNumber ) + 50;
+                      } else {
+                          totalPrice =totalPrice +(price *inputNumber) + 120;
+                      }
+                      break;
+                      case ("extraLarge") :
                         price = 1200;
                         if (inputCrust == "crispy") {
-                         totalPrice = (price  * inputNumber )+100;
+                         totalPrice =totalPrice + (price  * inputNumber )+100;
                       }else if (inputCrust =="stuffed") {
-                          totalPrice = (price * inputNumber ) + 50;
+                          totalPrice =totalPrice + (price * inputNumber ) + 50;
                       } else {
-                          totalPrice =(price *inputNumber) + 120
+                          totalPrice =totalPrice +(price *inputNumber) + 120;
                       }
-            }
-            switch (inputToppings){
-                case ("pepperoni"):
-                    price = 150
-            }
+                    }
+                      break;
+            case ("MeatDeluxe"):
+                switch(inputSize) {
+                    case ("small"):
+                        price = 550;
+                        if (inputCrust === "crispy") {
+                        totalPrice = totalPrice +(price  * inputNumber )+100;
+                        
+                        }else if (inputCrust ==="stuffed") {
+                            totalPrice =totalPrice + (price * inputNumber ) + 50;
+                        } else {
+                            totalPrice =totalPrice +(price *inputNumber) + 120
+                        }
+                        
+                        break;
+                        case  ("medium"):
+                            price = 750;
+                            if (inputCrust === "crispy") {
+                            totalPrice =totalPrice + (price  * inputNumber )+100;
+                        }else if (inputCrust ==="stuffed") {
+                            totalPrice =totalPrice + (price * inputNumber ) + 50;
+                        } else {
+                            totalPrice =totalPrice +(price *inputNumber) + 120
+                        }
+                        break;
+                        case ("large") :
+                            price = 1100;
+                            if (inputCrust == "crispy") {
+                            totalPrice =totalPrice + (price  * inputNumber )+100;
+                        }else if (inputCrust =="stuffed") {
+                            totalPrice =totalPrice + (price * inputNumber ) + 50;
+                        } else {
+                            totalPrice =totalPrice +(price *inputNumber) + 120;
+                        }
+                        break;
+                        case ("extraLarge") :
+                            price = 1200;
+                            if (inputCrust == "crispy") {
+                            totalPrice =totalPrice + (price  * inputNumber )+100;
+                        }else if (inputCrust =="stuffed") {
+                            totalPrice =totalPrice + (price * inputNumber ) + 50;
+                        } else {
+                            totalPrice =totalPrice +(price *inputNumber) + 120;
+                        }
+                    }
+                        break;
+                    case ("chickenbacon"):
+                         switch(inputSize) {
+                                case ("small"):
+                                    price = 550;
+                                    if (inputCrust === "crispy") {
+                                    totalPrice = totalPrice +(price  * inputNumber )+100;
+                                    
+                                    }else if (inputCrust ==="stuffed") {
+                                        totalPrice =totalPrice + (price * inputNumber ) + 50;
+                                    } else {
+                                        totalPrice =totalPrice +(price *inputNumber) + 120
+                                    }
+                                    
+                                    break;
+                                    case  ("medium"):
+                                        price = 750;
+                                        if (inputCrust === "crispy") {
+                                        totalPrice =totalPrice + (price  * inputNumber )+100;
+                                    }else if (inputCrust ==="stuffed") {
+                                        totalPrice =totalPrice + (price * inputNumber ) + 50;
+                                    } else {
+                                        totalPrice =totalPrice +(price *inputNumber) + 120
+                                    }
+                                    break;
+                                    case ("large") :
+                                        price = 1100;
+                                        if (inputCrust == "crispy") {
+                                        totalPrice =totalPrice + (price  * inputNumber )+100;
+                                    }else if (inputCrust =="stuffed") {
+                                        totalPrice =totalPrice + (price * inputNumber ) + 50;
+                                    } else {
+                                        totalPrice =totalPrice +(price *inputNumber) + 120;
+                                    }
+                                    break;
+                                    case ("extraLarge") :
+                                        price = 1200;
+                                        if (inputCrust == "crispy") {
+                                        totalPrice =totalPrice + (price  * inputNumber )+100;
+                                    }else if (inputCrust =="stuffed") {
+                                        totalPrice =totalPrice + (price * inputNumber ) + 50;
+                                    } else {
+                                        totalPrice =totalPrice +(price *inputNumber) + 120;
+                                    }
+                                }
+                                    break;
+                                 
+                    case ("Vegeterianpizza"):
+                        switch(inputSize) {
+                                case ("small"):
+                                    price = 550;
+                                    if (inputCrust === "crispy") {
+                                    totalPrice = totalPrice +(price  * inputNumber )+100;
+                                    
+                                    }else if (inputCrust ==="stuffed") {
+                                        totalPrice =totalPrice + (price * inputNumber ) + 50;
+                                    } else {
+                                        totalPrice =totalPrice +(price *inputNumber) + 120
+                                    }
+                                    
+                                    break;
+                                    case  ("medium"):
+                                        price = 750;
+                                        if (inputCrust === "crispy") {
+                                        totalPrice =totalPrice + (price  * inputNumber )+100;
+                                    }else if (inputCrust ==="stuffed") {
+                                        totalPrice =totalPrice + (price * inputNumber ) + 50;
+                                    } else {
+                                        totalPrice =totalPrice +(price *inputNumber) + 120
+                                    }
+                                    break;
+                                    case ("large") :
+                                        price = 1100;
+                                        if (inputCrust == "crispy") {
+                                        totalPrice =totalPrice + (price  * inputNumber )+100;
+                                    }else if (inputCrust =="stuffed") {
+                                        totalPrice =totalPrice + (price * inputNumber ) + 50;
+                                    } else {
+                                        totalPrice =totalPrice +(price *inputNumber) + 120;
+                                    }
+                                    break;
+                                    case ("extraLarge") :
+                                        price = 1200;
+                                        if (inputCrust == "crispy") {
+                                        totalPrice =totalPrice + (price  * inputNumber )+100;
+                                    }else if (inputCrust =="stuffed") {
+                                        totalPrice =totalPrice + (price * inputNumber ) + 50;
+                                    } else {
+                                        totalPrice =totalPrice +(price *inputNumber) + 120;
+                                    }
+                                    
+                }
+                break;
+                 
 
       
     }
+
+
+
+switch (inputToppings){
+    case ("pepperoni"):
+        totalPrice =totalPrice + 150;
+        break;
+        case ("mushroom"):
+            totalPrice=totalPrice +100;
+            break;
+            case ("onion"):
+                totalPrice=totalPrice +100;
+                break;
+                case ("sausages"):
+                    totalPrice =totalPrice+150;
+                    break;
+                case ("Bacon"):
+                totalPrice =totalPrice + 200;
+                break;
+                case ("cheese"):
+                totalPrice =totalPrice+ 150;
+                break;
+                case ("olive"):
+                    totalPrice =totalPrice+ 100;
+                    break;
+
+}
+switch (deliveryFee){
+    case ("yes"):
+    if (deliveryFee === "yes"){
+        alert("Your delivery will be made to your home address .Thank you!")
+    }else {
+        alert("Come for your food at our station")
+    }
+}
+
+
+
+}
