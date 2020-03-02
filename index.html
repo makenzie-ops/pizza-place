@@ -1,126 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>  
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-        <link href="css/styles.css" rel="stylesheet" type="text/css">
-        <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
-        <script src="js/scripts.js"></script> 
+
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
     <title>pizza-place </title>
-    </head>
-    <body class="container-fluid">
-        <div id="Home">
-            <div class="row pizz">
-                <div class="col-md-12">
-                    <div class="container">
-                        <div class="jumbotron">
-                            <h1 class=" text-center"><b>Una's Pizzeria</b></h1>
-    
-                        </div>
+</head>
+
+<body class="container-fluid">
+    <div id="Home">
+        <div class="row pizz">
+            <div class="col-md-12">
+                <div class="container">
+                    <div class="jumbotron">
+                        <h1 class=" text-center"><b>Una's Pizzeria</b></h1>
+
                     </div>
-                    
-                    
                 </div>
-                <div class="col-md-4">
-                    <a href="#Home">Home</a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#menu"> Menu</a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#contacts">Contacts </a>
-                </div>
+
+
             </div>
+            <div class="col-md-4">
+                <a href="#Home">Home</a>
+            </div>
+            <div class="col-md-4">
+                <a href="#menu"> Menu</a>
+            </div>
+            <div class="col-md-4">
+                <a href="#contacts">Contacts </a>
+            </div>
+        </div>
         <div class="advert">
-           
+
         </div>
-       
-        <p>Get the best pizza's at the best price available here .The homemade pizza dough is produced in-house daily and is another reason why the pizza here always tastes better. The Twisty Bread, the signature Wingz and the delicious Double Meal are additional value .Here you get to choose the pizza of your choice and the delivery will be made on time.</p>
+
+        <p>Get the best pizza's at the best price available here .The homemade pizza dough is produced in-house daily
+            and is another reason why the pizza here always tastes better. The Twisty Bread, the signature Wingz and the
+            delicious Double Meal are additional value .Here you get to choose the pizza of your choice and the delivery
+            will be made on time.</p>
+    </div>
+
+
+    <div id="Menu">
+        <p><b>Types of pizza available</b></p>
+        <div class="row text-center">
+            <div class="col-md-3 pizz1">
+                <img src="hawaian.jpg" height="200" width="250">
+                <p class="carousel-caption hawaianPizz"><b> Hawaian pizza</b></p>
+            </div>
+            <div class="col-md-3 pizz2">
+                <img src="meat.jpg" height="200" width="280">
+                <p class="carousel-caption Deluxe"><b>Meat Deluxe</b></p>
+            </div>
+            <div class="col-md-3 pizz3">
+                <img src="chicken.jpg" height="200" width="270">
+                <p class="carousel-caption bacon"><b>Chicken bacon barbeque </b></p>
+            </div>
+            <div class="col-md-3 pizz4">
+                <img src="veg.jpg" height="200" width="250">
+                <p class="carousel-caption vegie"><b>Vegeterian pizza</b></p>
+            </div>
         </div>
-            
-         
-             <div id="Menu">
-                <p><b>Types of pizza available</b></p>
-                <div class="row text-center">
-                    <div class="col-md-3 pizz1">
-                        <img src="hawaian.jpg" height="200" width="250">
-                        <p  class="carousel-caption hawaianPizz"><b> Hawaian pizza</b></p>
-                    </div>
-                    <div class="col-md-3 pizz2">
-                        <img src="meat.jpg" height="200" width="280">
-                        <p  class="carousel-caption Deluxe"><b>Meat Deluxe</b></p>
-                    </div>
-                    <div class="col-md-3 pizz3">
-                        <img src="chicken.jpg" height="200" width="270">
-                        <p  class="carousel-caption bacon"><b>Chicken bacon barbeque </b></p>
-                    </div>
-                    <div class="col-md-3 pizz4">
-                        <img src="veg.jpg" height="200" width="250">
-                        <p  class="carousel-caption vegie"><b>Vegeterian pizza</b></p>
-                    </div>
-                </div>
-                <form id="values">
-                <div class="container" >
-                    <P><label for="pizza-size">Choose which pizza size you would want:</label> </P> 
-                     <select  class="form-control " id="pizzaSize"   >
-                         <option value=""> </option>
-                       <option value="small">Small</option>
-                       <option value="medium">Medium</option>
-                       <option value="large">Large</option>
-                       <option value="extraLarge">Extra large</option>
-                     </select>
-                     <div class="crust">
-                        <p ><b>Which crust  would you want?</b></p>
+        <form id="values">
+            <div class="container">
+                <P><label for="pizza-size">Choose which pizza size you would want:</label> </P>
+                <select class="form-control " id="pizzaSize">
+                    <option value=""> </option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="extraLarge">Extra large</option>
+                </select>
+                <div class="crust">
+                    <p><b>Which crust would you want?</b></p>
                     <div class="radio">
-                    <label>
-                        <input type="radio" name="typo" value="cripsy"> Cripsy
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name="typo" value="stuffed">Stuffed
-                    </label>
-                </div>
+                        <label>
+                            <input type="radio" name="typo" value="cripsy"> Cripsy
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" name="typo" value="stuffed">Stuffed
+                        </label>
+                    </div>
                     <div class="radio">
                         <label>
                             <input type="radio" name="typo" value="glutten-free"> Glutten-free
                         </label>
                     </div>
-                    
-                     </div>
-                     <div class="toppings">
-                         <p>Decide on the toppings you would like:</p>
-                         <label for="onions">onions:</label>
-                         <input type="checkbox" id="onion" class="form-control">
-                         <label for="onions">Mushrooms:</label>
-                         <input type="checkbox" id="mush" class="form-control">
-                         <label for="onions">Bacon:</label>
-                         <input type="checkbox" id="bacs" class="form-control">
-                         <label for="onions">sausage:</label>
-                         <input type="checkbox" id="sausage" class="form-control">
-                         <label for="onions">cheese:</label>
-                         <input type="checkbox" id="cheese" class="form-control">
-                         <label for="onions">olives:</label>
-                         <input type="checkbox" id="olives" class="form-control">
-                         <label for="onions">Pineapples:</label>
-                         <input type="checkbox" id="Pineapples" class="form-control">                         
-                     </div>
-                     <div class="numbers">
-                        <label>How many pizzas do you want?</label>
-                     <input type="number" id="noPizza" class="form-control"> 
-                     <p>Do you want your pizza to be delivered?</p>
-                     <label>
-                        <input type="radio" name="typo" value="yes"> yes
+
+                </div>
+                <div class="toppings">
+                    <p>Decide on the toppings you would like:</p>
+                    <select class="form-control" id="pizzaToppings">
+                        <option value="pepperoni">pepperoni @ sh150</option>
+                        <option value="mushroom">Mushrooms @ sh100</option>
+                        <option value="onion">Onions @ sh100</option>
+                        <option value="sausages">Sausages @sh150</option>
+                        <option value="Bacon">Bacon @ sh200</option>
+                        <option value="cheese">Cheese @ sh150</option>
+                        <option value="olive">Olives @sh120</option>
+                    </select>
+                </div>
+                <div class="numbers">
+                    <label>How many pizzas do you want?</label>
+                    <input type="number" id="noPizza" class="form-control">
+                    <p>Do you want your pizza to be delivered?</p>
+                    <label>
+                        <input type="radio" name="delivery" value="yes"> yes
                     </label>
                     <label>
-                        <input type="radio" name="typo" value="no"> no
+                        <input type="radio" name="delivery" value="no"> no
                     </label>
-                     </div>
-                     
-                     </div>
                 </div>
-            </form>
+                <button type="submit" class="btn-primary">Go</button>
+            </div>
+    </div>
+    </form>
 
-         
-    
-    </body>
+
+
+</body>
+
 </html>
