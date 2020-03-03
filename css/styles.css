@@ -43,3 +43,7 @@ body{
     font-size: larger;
     color: black;
 }
+.para {
+    font-family: 'Courgette', cursive ;
+    padding: 30px;
+}
