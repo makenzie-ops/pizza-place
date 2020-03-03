@@ -38,7 +38,7 @@ body{
 .Una {
     font-family: 'Lacquer' ;
 }
-.available .decision {
+.available, .pizz1, .pizz2, .pizz3 ,.pizz4 {
     font-family: 'Shadows Into Light' ;
     font-size: larger;
     color: black;
