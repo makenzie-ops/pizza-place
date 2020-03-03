@@ -11,6 +11,7 @@ function Pizza(type, size,crust,toppings,number){
 
 }
 
+
 $(document).ready(function(){
     $("#values").click(function(event){
 
@@ -31,7 +32,7 @@ $(document).ready(function(){
         $(".numberResult").text(newPizza.number)
         $(".total").text(totalPrice)
         
-        //alert(totalPrice);
+        
 
         totalPrice=0;
        
@@ -258,12 +259,15 @@ switch (inputToppings){
 switch (deliveryFee){
     case ("yes"):
     if (deliveryFee === "yes"){
-        alert("Your delivery will be made to your home address .Thank you!")
-    }else {
-        alert("Come for your food at our station")
+        var dev = prompt("Please enter your delivery address");
+        alert("Your delivery will be made to "+dev+" Thank you! Happy meals");
+    } 
+    break;
+    case("no"):
+ if (deliveryFee === "no") {
+        alert(" Happy meals !Come for your food at our nearest station");
     }
 }
-
-
+ 
 
 }
