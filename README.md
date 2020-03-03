@@ -8,7 +8,7 @@ This is a pizza application that displays the different types of pizzas availabl
 *create a folder
 *create and git clone https://github.com/makenzie-ops/pizza-place.git
 ## Technologies Used
-HTML, JS and CSS
+HTML, JS ,jQuery and CSS
 ## Support and contact details
 If there is a problem contact 0745981114
 ### License
