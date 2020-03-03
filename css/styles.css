@@ -29,3 +29,9 @@ body{
 .available {
     text-align: center;
 }
+.results {
+    background-image: url(../background.jpg);
+    background-size: auto;
+    text-align: center;
+    
+}
