@@ -1,4 +1,4 @@
-###pizza-place
+# Una's pizzeria
 This app simply assists one to make their order by checking out the prices and how they would like their pizza made.
 ### Author 
 By Laureen Makenzie
